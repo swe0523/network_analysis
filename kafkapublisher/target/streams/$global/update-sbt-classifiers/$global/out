@@ -1,0 +1,1376 @@
+[debug] Other repositories:
+[debug] Default repositories:
+[debug] 	Raw(ProjectResolver(inter-project, mapped: default#default-18d100;0.0))
+[debug] 	URLRepository(typesafe-ivy-releases,Patterns(ivyPatterns=List(http://repo.typesafe.com/typesafe/ivy-releases/[organisation]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]), artifactPatterns=List(http://repo.typesafe.com/typesafe/ivy-releases/[organisation]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]), isMavenCompatible=false))
+[debug] 	URLRepository(sbt-plugin-releases,Patterns(ivyPatterns=List(http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/[organisation]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]), artifactPatterns=List(http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/[organisation]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]), isMavenCompatible=false))
+[debug] 	FileRepository(local,FileConfiguration(true,None),Patterns(ivyPatterns=List(${ivy.home}/local/[organisation]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]), artifactPatterns=List(${ivy.home}/local/[organisation]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]), isMavenCompatible=false))
+[debug] 	sbt-releases: http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/
+[debug] 	public: http://repo1.maven.org/maven2/
+[debug] Using inline dependencies specified in Scala.
+[debug] :: resolving dependencies :: kafkapublisher#kafkapublisher$sbt_2.10;1.0
+[debug] 	confs: [default]
+[debug] 	validate = true
+[debug] 	refresh = false
+[debug] resolving dependencies for configuration 'default'
+[debug] == resolving dependencies for kafkapublisher#kafkapublisher$sbt_2.10;1.0 [default]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sbt_2.10;1.0->org.scala-sbt#sbt;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#sbt;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#sbt;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#sbt;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#sbt;0.12.4
+[debug] 	found org.scala-sbt#sbt;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#sbt;0.12.4->org.scala-sbt#main;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#main;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#main;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#main;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#main;0.12.4
+[debug] 	found org.scala-sbt#main;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#main;0.12.4->org.scala-sbt#actions;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#actions;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#actions;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#actions;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#actions;0.12.4
+[debug] 	found org.scala-sbt#actions;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#actions;0.12.4->org.scala-sbt#classpath;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#classpath;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#classpath;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#classpath;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#classpath;0.12.4
+[debug] 	found org.scala-sbt#classpath;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#classpath;0.12.4->org.scala-sbt#launcher-interface;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#launcher-interface;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#launcher-interface;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#launcher-interface;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#launcher-interface;0.12.4
+[debug] 	found org.scala-sbt#launcher-interface;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#launcher-interface;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-lang#scala-library;2.10.3 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.3
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-lang#scala-library;2.10.3
+[debug] 	found org.scala-lang#scala-library;2.10.3 in sbt-chain
+[debug] == resolving dependencies org.scala-sbt#launcher-interface;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#launcher-interface;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#launcher-interface;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#classpath;0.12.4->org.scala-sbt#interface;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#interface;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#interface;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#interface;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#interface;0.12.4
+[debug] 	found org.scala-sbt#interface;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#interface;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#interface;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#interface;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#interface;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#classpath;0.12.4->org.scala-sbt#io;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#io;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#io;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#io;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#io;0.12.4
+[debug] 	found org.scala-sbt#io;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {test=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {test=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#io;0.12.4->org.scala-sbt#control;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {test=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {test=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#control;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#control;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#control;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#control;0.12.4
+[debug] 	found org.scala-sbt#control;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#control;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {test=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {test=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {test=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {test=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#control;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#control;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#control;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#io;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#io;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#io;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#io;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#classpath;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#classpath;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#classpath;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#classpath;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#classpath;0.12.4->org.scala-lang#scala-compiler;2.10.3 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-lang#scala-compiler;2.10.3 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.10.3 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.10.3
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-lang#scala-compiler;2.10.3
+[debug] 	found org.scala-lang#scala-compiler;2.10.3 in sbt-chain
+[debug] == resolving dependencies org.scala-sbt#classpath;0.12.4->org.scala-lang#scala-compiler;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#classpath;0.12.4->org.scala-lang#scala-compiler;2.10.3 [compile->compile]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.3->org.scala-lang#scala-library;2.10.3 [compile->master(*)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.3->org.scala-lang#scala-library;2.10.3 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.3->org.scala-lang#scala-reflect;2.10.3 [compile->master(*)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-lang#scala-reflect;2.10.3 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.10.3
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-lang#scala-reflect;2.10.3
+[debug] 	found org.scala-lang#scala-reflect;2.10.3 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.3->org.scala-lang#scala-reflect;2.10.3 [compile->compile(*)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.3->org.scala-lang#scala-library;2.10.3 [compile->master(*)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.3->org.scala-lang#scala-library;2.10.3 [compile->compile(*)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.3->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.3->org.scala-lang#scala-library;2.10.3 [runtime->compile]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.3->org.scala-lang#scala-reflect;2.10.3 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.3->org.scala-lang#scala-reflect;2.10.3 [runtime->compile]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.3->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.3->org.scala-lang#scala-library;2.10.3 [runtime->compile]
+[debug] == resolving dependencies org.scala-sbt#classpath;0.12.4->org.scala-lang#scala-compiler;2.10.3 [compile->master]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[debug] == resolving dependencies org.scala-sbt#actions;0.12.4->org.scala-sbt#completion;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#completion;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#completion;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#completion;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#completion;0.12.4
+[debug] 	found org.scala-sbt#completion;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#completion;0.12.4->org.scala-sbt#collections;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#collections;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#collections;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#collections;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#collections;0.12.4
+[debug] 	found org.scala-sbt#collections;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#collections;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#collections;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#collections;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#collections;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#completion;0.12.4->org.scala-sbt#control;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#completion;0.12.4->org.scala-sbt#io;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#completion;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#completion;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#completion;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#completion;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#completion;0.12.4->jline#jline;1.0 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving jline#jline;1.0 ...
+[debug] sbt-chain: Checking cache for: dependency: jline#jline;1.0 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: jline#jline;1.0
+[debug] 	typesafe-ivy-releases: revision in cache: jline#jline;1.0
+[debug] 	found jline#jline;1.0 in sbt-chain
+[debug] == resolving dependencies org.scala-sbt#completion;0.12.4->jline#jline;1.0 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#completion;0.12.4->jline#jline;1.0 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#completion;0.12.4->jline#jline;1.0 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#actions;0.12.4->org.scala-sbt#api;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#api;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#api;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#api;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#api;0.12.4
+[debug] 	found org.scala-sbt#api;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#api;0.12.4->org.scala-sbt#interface;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#api;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#api;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#api;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#api;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#actions;0.12.4->org.scala-sbt#compiler-integration;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#compiler-integration;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#compiler-integration;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#compiler-integration;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#compiler-integration;0.12.4
+[debug] 	found org.scala-sbt#compiler-integration;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#compiler-integration;0.12.4->org.scala-sbt#incremental-compiler;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#incremental-compiler;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#incremental-compiler;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#incremental-compiler;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#incremental-compiler;0.12.4
+[debug] 	found org.scala-sbt#incremental-compiler;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#incremental-compiler;0.12.4->org.scala-sbt#collections;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#incremental-compiler;0.12.4->org.scala-sbt#api;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#incremental-compiler;0.12.4->org.scala-sbt#io;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#incremental-compiler;0.12.4->org.scala-sbt#logging;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#logging;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#logging;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#logging;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#logging;0.12.4
+[debug] 	found org.scala-sbt#logging;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#logging;0.12.4->org.scala-sbt#interface;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#logging;0.12.4->org.scala-sbt#process;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#process;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#process;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#process;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#process;0.12.4
+[debug] 	found org.scala-sbt#process;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#process;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#process;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#process;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#process;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#logging;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#logging;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#logging;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#logging;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#incremental-compiler;0.12.4->org.scala-sbt#classpath;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#incremental-compiler;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#incremental-compiler;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#incremental-compiler;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#incremental-compiler;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#compiler-integration;0.12.4->org.scala-sbt#compile;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#compile;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#compile;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#compile;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#compile;0.12.4
+[debug] 	found org.scala-sbt#compile;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {test=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {test=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#compile;0.12.4->org.scala-sbt#launcher-interface;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {test=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {test=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#compile;0.12.4->org.scala-sbt#interface;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {test=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {test=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#compile;0.12.4->org.scala-sbt#logging;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {test=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {test=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#compile;0.12.4->org.scala-sbt#io;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {test=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {test=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#compile;0.12.4->org.scala-sbt#classpath;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {test=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {test=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#compile;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {test=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {test=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#compile;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#compile;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#compile;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#compiler-integration;0.12.4->org.scala-sbt#persist;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#persist;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#persist;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#persist;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#persist;0.12.4
+[debug] 	found org.scala-sbt#persist;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#persist;0.12.4->org.scala-sbt#incremental-compiler;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#persist;0.12.4->org.scala-sbt#api;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#persist;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#persist;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#persist;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#persist;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#persist;0.12.4->org.scala-tools.sbinary#sbinary_2.9.0;0.4.0 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-tools.sbinary#sbinary_2.9.0;0.4.0 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-tools.sbinary#sbinary_2.9.0;0.4.0 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-tools.sbinary#sbinary_2.9.0;0.4.0
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-tools.sbinary#sbinary_2.9.0;0.4.0
+[debug] 	found org.scala-tools.sbinary#sbinary_2.9.0;0.4.0 in sbt-chain
+[debug] == resolving dependencies org.scala-sbt#persist;0.12.4->org.scala-tools.sbinary#sbinary_2.9.0;0.4.0 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#persist;0.12.4->org.scala-tools.sbinary#sbinary_2.9.0;0.4.0 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#persist;0.12.4->org.scala-tools.sbinary#sbinary_2.9.0;0.4.0 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#compiler-integration;0.12.4->org.scala-sbt#api;0.12.4 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#compiler-integration;0.12.4->org.scala-sbt#classfile;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#classfile;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#classfile;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#classfile;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#classfile;0.12.4
+[debug] 	found org.scala-sbt#classfile;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#classfile;0.12.4->org.scala-sbt#io;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#classfile;0.12.4->org.scala-sbt#interface;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#classfile;0.12.4->org.scala-sbt#logging;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#classfile;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#classfile;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#classfile;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#classfile;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#compiler-integration;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#compiler-integration;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#compiler-integration;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#compiler-integration;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#actions;0.12.4->org.scala-sbt#compiler-ivy-integration;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#compiler-ivy-integration;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#compiler-ivy-integration;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#compiler-ivy-integration;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#compiler-ivy-integration;0.12.4
+[debug] 	found org.scala-sbt#compiler-ivy-integration;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#compiler-ivy-integration;0.12.4->org.scala-sbt#ivy;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#ivy;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#ivy;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#ivy;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#ivy;0.12.4
+[debug] 	found org.scala-sbt#ivy;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#ivy;0.12.4->org.scala-sbt#interface;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#ivy;0.12.4->org.scala-sbt#launcher-interface;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#ivy;0.12.4->org.scala-sbt#logging;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#ivy;0.12.4->org.scala-sbt#io;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#ivy;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#ivy;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#ivy;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#ivy;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#ivy;0.12.4->org.apache.ivy#ivy;2.3.0-rc1 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.apache.ivy#ivy;2.3.0-rc1 ...
+[debug] sbt-chain: Checking cache for: dependency: org.apache.ivy#ivy;2.3.0-rc1 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.apache.ivy#ivy;2.3.0-rc1
+[debug] 	typesafe-ivy-releases: revision in cache: org.apache.ivy#ivy;2.3.0-rc1
+[debug] 	found org.apache.ivy#ivy;2.3.0-rc1 in sbt-chain
+[debug] == resolving dependencies org.scala-sbt#ivy;0.12.4->org.apache.ivy#ivy;2.3.0-rc1 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#ivy;0.12.4->org.apache.ivy#ivy;2.3.0-rc1 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#ivy;0.12.4->org.apache.ivy#ivy;2.3.0-rc1 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#ivy;0.12.4->com.jcraft#jsch;0.1.46 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving com.jcraft#jsch;0.1.46 ...
+[debug] sbt-chain: Checking cache for: dependency: com.jcraft#jsch;0.1.46 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: com.jcraft#jsch;0.1.46
+[debug] 	typesafe-ivy-releases: revision in cache: com.jcraft#jsch;0.1.46
+[debug] 	found com.jcraft#jsch;0.1.46 in sbt-chain
+[debug] == resolving dependencies org.scala-sbt#ivy;0.12.4->com.jcraft#jsch;0.1.46 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#ivy;0.12.4->com.jcraft#jsch;0.1.46 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#ivy;0.12.4->com.jcraft#jsch;0.1.46 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#ivy;0.12.4->commons-httpclient#commons-httpclient;3.1 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving commons-httpclient#commons-httpclient;3.1 ...
+[debug] sbt-chain: Checking cache for: dependency: commons-httpclient#commons-httpclient;3.1 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: commons-httpclient#commons-httpclient;3.1
+[debug] 	typesafe-ivy-releases: revision in cache: commons-httpclient#commons-httpclient;3.1
+[debug] 	found commons-httpclient#commons-httpclient;3.1 in sbt-chain
+[debug] == resolving dependencies org.scala-sbt#ivy;0.12.4->commons-httpclient#commons-httpclient;3.1 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#ivy;0.12.4->commons-httpclient#commons-httpclient;3.1 [compile->compile]
+[debug] == resolving dependencies commons-httpclient#commons-httpclient;3.1->commons-logging#commons-logging;1.0.4 [compile->master(*)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving commons-logging#commons-logging;1.0.4 ...
+[debug] sbt-chain: Checking cache for: dependency: commons-logging#commons-logging;1.0.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[debug] sbt-chain: module revision found in cache: commons-logging#commons-logging;1.0.4
+[debug] 	typesafe-ivy-releases: revision in cache: commons-logging#commons-logging;1.0.4
+[debug] 	found commons-logging#commons-logging;1.0.4 in sbt-chain
+[debug] == resolving dependencies commons-httpclient#commons-httpclient;3.1->commons-logging#commons-logging;1.0.4 [compile->compile(*)]
+[debug] == resolving dependencies commons-httpclient#commons-httpclient;3.1->commons-codec#commons-codec;1.2 [compile->master(*)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving commons-codec#commons-codec;1.2 ...
+[debug] sbt-chain: Checking cache for: dependency: commons-codec#commons-codec;1.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[debug] sbt-chain: module revision found in cache: commons-codec#commons-codec;1.2
+[debug] 	typesafe-ivy-releases: revision in cache: commons-codec#commons-codec;1.2
+[debug] 	found commons-codec#commons-codec;1.2 in sbt-chain
+[debug] == resolving dependencies commons-httpclient#commons-httpclient;3.1->commons-codec#commons-codec;1.2 [compile->compile(*)]
+[debug] == resolving dependencies commons-httpclient#commons-httpclient;3.1->commons-logging#commons-logging;1.0.4 [runtime->runtime(*)]
+[debug] == resolving dependencies commons-httpclient#commons-httpclient;3.1->commons-logging#commons-logging;1.0.4 [runtime->compile]
+[debug] == resolving dependencies commons-httpclient#commons-httpclient;3.1->commons-codec#commons-codec;1.2 [runtime->runtime(*)]
+[debug] == resolving dependencies commons-httpclient#commons-httpclient;3.1->commons-codec#commons-codec;1.2 [runtime->compile]
+[debug] == resolving dependencies org.scala-sbt#ivy;0.12.4->commons-httpclient#commons-httpclient;3.1 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#compiler-ivy-integration;0.12.4->org.scala-sbt#compile;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#compiler-ivy-integration;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#compiler-ivy-integration;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#compiler-ivy-integration;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#compiler-ivy-integration;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#actions;0.12.4->org.scala-sbt#interface;0.12.4 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#actions;0.12.4->org.scala-sbt#io;0.12.4 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#actions;0.12.4->org.scala-sbt#ivy;0.12.4 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#actions;0.12.4->org.scala-sbt#logging;0.12.4 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#actions;0.12.4->org.scala-sbt#process;0.12.4 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#actions;0.12.4->org.scala-sbt#run;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#run;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#run;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#run;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#run;0.12.4
+[debug] 	found org.scala-sbt#run;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#run;0.12.4->org.scala-sbt#io;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#run;0.12.4->org.scala-sbt#logging;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#run;0.12.4->org.scala-sbt#classpath;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#run;0.12.4->org.scala-sbt#process;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#run;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#run;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#run;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#run;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#actions;0.12.4->org.scala-sbt#task-system;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#task-system;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#task-system;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#task-system;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#task-system;0.12.4
+[debug] 	found org.scala-sbt#task-system;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#task-system;0.12.4->org.scala-sbt#tasks;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#tasks;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#tasks;0.12.4 {compile=[default(compile)], test=[test]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#tasks;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#tasks;0.12.4
+[debug] 	found org.scala-sbt#tasks;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#tasks;0.12.4->org.scala-sbt#control;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#tasks;0.12.4->org.scala-sbt#collections;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#tasks;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#tasks;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#tasks;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#tasks;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#task-system;0.12.4->org.scala-sbt#collections;0.12.4 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#task-system;0.12.4->org.scala-sbt#logging;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#task-system;0.12.4->org.scala-sbt#io;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#task-system;0.12.4->org.scala-sbt#process;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#task-system;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#task-system;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#task-system;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#task-system;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#actions;0.12.4->org.scala-sbt#tasks;0.12.4 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#actions;0.12.4->org.scala-sbt#tracking;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#tracking;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#tracking;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#tracking;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#tracking;0.12.4
+[debug] 	found org.scala-sbt#tracking;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#tracking;0.12.4->org.scala-sbt#cache;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#cache;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#cache;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#cache;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#cache;0.12.4
+[debug] 	found org.scala-sbt#cache;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#cache;0.12.4->org.scala-sbt#io;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#cache;0.12.4->org.scala-sbt#collections;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#cache;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#cache;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#cache;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#cache;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#cache;0.12.4->org.scala-tools.sbinary#sbinary_2.9.0;0.4.0 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#cache;0.12.4->org.scala-tools.sbinary#sbinary_2.9.0;0.4.0 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#cache;0.12.4->org.scala-tools.sbinary#sbinary_2.9.0;0.4.0 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#cache;0.12.4->org.scala-tools.sbinary#sbinary_2.9.0;0.4.0 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#tracking;0.12.4->org.scala-sbt#io;0.12.4 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#tracking;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#tracking;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#tracking;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#tracking;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#actions;0.12.4->org.scala-sbt#testing;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#testing;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#testing;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#testing;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#testing;0.12.4
+[debug] 	found org.scala-sbt#testing;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#testing;0.12.4->org.scala-sbt#io;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#testing;0.12.4->org.scala-sbt#classpath;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#testing;0.12.4->org.scala-sbt#logging;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#testing;0.12.4->org.scala-sbt#launcher-interface;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#testing;0.12.4->org.scala-sbt#test-agent;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#test-agent;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#test-agent;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#test-agent;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#test-agent;0.12.4
+[debug] 	found org.scala-sbt#test-agent;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#test-agent;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#test-agent;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#test-agent;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#test-agent;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#test-agent;0.12.4->org.scala-tools.testing#test-interface;0.5 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-tools.testing#test-interface;0.5 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-tools.testing#test-interface;0.5 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-tools.testing#test-interface;0.5
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-tools.testing#test-interface;0.5
+[debug] 	found org.scala-tools.testing#test-interface;0.5 in sbt-chain
+[debug] == resolving dependencies org.scala-sbt#test-agent;0.12.4->org.scala-tools.testing#test-interface;0.5 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#test-agent;0.12.4->org.scala-tools.testing#test-interface;0.5 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#test-agent;0.12.4->org.scala-tools.testing#test-interface;0.5 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#testing;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#testing;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#testing;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#testing;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#testing;0.12.4->org.scala-tools.testing#test-interface;0.5 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#testing;0.12.4->org.scala-tools.testing#test-interface;0.5 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#testing;0.12.4->org.scala-tools.testing#test-interface;0.5 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#testing;0.12.4->org.scala-tools.testing#test-interface;0.5 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#actions;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#actions;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#actions;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#actions;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#main;0.12.4->org.scala-sbt#interface;0.12.4 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#main;0.12.4->org.scala-sbt#io;0.12.4 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#main;0.12.4->org.scala-sbt#ivy;0.12.4 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#main;0.12.4->org.scala-sbt#launcher-interface;0.12.4 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#main;0.12.4->org.scala-sbt#logging;0.12.4 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#main;0.12.4->org.scala-sbt#process;0.12.4 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#main;0.12.4->org.scala-sbt#run;0.12.4 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#main;0.12.4->org.scala-sbt#command;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#command;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#command;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#command;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#command;0.12.4
+[debug] 	found org.scala-sbt#command;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#command;0.12.4->org.scala-sbt#interface;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#command;0.12.4->org.scala-sbt#io;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#command;0.12.4->org.scala-sbt#launcher-interface;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#command;0.12.4->org.scala-sbt#logging;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#command;0.12.4->org.scala-sbt#completion;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#command;0.12.4->org.scala-sbt#classpath;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#command;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#command;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#command;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#command;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#main;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#main;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#main;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#main;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#sbt;0.12.4->org.scala-sbt#compiler-interface;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#compiler-interface;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#compiler-interface;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#compiler-interface;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#compiler-interface;0.12.4
+[debug] 	found org.scala-sbt#compiler-interface;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {provided=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#compiler-interface;0.12.4->org.scala-sbt#interface;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {provided=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#compiler-interface;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {provided=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#compiler-interface;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#compiler-interface;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#compiler-interface;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#compiler-interface;0.12.4->jline#jline;1.0 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {provided=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#compiler-interface;0.12.4->jline#jline;1.0 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#compiler-interface;0.12.4->jline#jline;1.0 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#compiler-interface;0.12.4->jline#jline;1.0 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#sbt;0.12.4->org.scala-sbt#precompiled-2_8_2;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#precompiled-2_8_2;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#precompiled-2_8_2;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#precompiled-2_8_2;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#precompiled-2_8_2;0.12.4
+[debug] 	found org.scala-sbt#precompiled-2_8_2;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.8.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.8.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {provided=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#precompiled-2_8_2;0.12.4->org.scala-sbt#interface;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.8.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.8.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {provided=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#precompiled-2_8_2;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.8.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.8.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {provided=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#precompiled-2_8_2;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#precompiled-2_8_2;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#precompiled-2_8_2;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#precompiled-2_8_2;0.12.4->jline#jline;1.0 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.8.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.8.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {provided=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#precompiled-2_8_2;0.12.4->jline#jline;1.0 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#precompiled-2_8_2;0.12.4->jline#jline;1.0 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#precompiled-2_8_2;0.12.4->jline#jline;1.0 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#sbt;0.12.4->org.scala-sbt#precompiled-2_9_3;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#precompiled-2_9_3;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#precompiled-2_9_3;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#precompiled-2_9_3;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#precompiled-2_9_3;0.12.4
+[debug] 	found org.scala-sbt#precompiled-2_9_3;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.3 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.3 {provided=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {provided=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#precompiled-2_9_3;0.12.4->org.scala-sbt#interface;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.3 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.3 {provided=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {provided=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#precompiled-2_9_3;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.3 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.3 {provided=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {provided=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#precompiled-2_9_3;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#precompiled-2_9_3;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#precompiled-2_9_3;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#precompiled-2_9_3;0.12.4->jline#jline;1.0 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.3 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.9.3 {provided=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {provided=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#precompiled-2_9_3;0.12.4->jline#jline;1.0 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#precompiled-2_9_3;0.12.4->jline#jline;1.0 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#precompiled-2_9_3;0.12.4->jline#jline;1.0 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#sbt;0.12.4->org.scala-sbt#precompiled-2_10_1;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[info] Resolving org.scala-sbt#precompiled-2_10_1;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#precompiled-2_10_1;0.12.4 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#precompiled-2_10_1;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#precompiled-2_10_1;0.12.4
+[debug] 	found org.scala-sbt#precompiled-2_10_1;0.12.4 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.1 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.1 {provided=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {provided=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#precompiled-2_10_1;0.12.4->org.scala-sbt#interface;0.12.4 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.1 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.1 {provided=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {provided=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#precompiled-2_10_1;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.1 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.1 {provided=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {provided=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#precompiled-2_10_1;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#precompiled-2_10_1;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#precompiled-2_10_1;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#precompiled-2_10_1;0.12.4->jline#jline;1.0 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.1 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {compile=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.1 {provided=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.3 {provided=[default(compile)]}
+[debug] == resolving dependencies org.scala-sbt#precompiled-2_10_1;0.12.4->jline#jline;1.0 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#precompiled-2_10_1;0.12.4->jline#jline;1.0 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#precompiled-2_10_1;0.12.4->jline#jline;1.0 [compile->master]
+[debug] == resolving dependencies org.scala-sbt#sbt;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->default(compile)]
+[debug] == resolving dependencies org.scala-sbt#sbt;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->runtime]
+[debug] == resolving dependencies org.scala-sbt#sbt;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->compile]
+[debug] == resolving dependencies org.scala-sbt#sbt;0.12.4->org.scala-lang#scala-library;2.10.3 [compile->master]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sbt_2.10;1.0->org.jetbrains#sbt-structure;2.4.0 [default->default(compile)]
+[info] Resolving org.jetbrains#sbt-structure;2.4.0 ...
+[debug] sbt-chain: Checking cache for: dependency: org.jetbrains#sbt-structure;2.4.0 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.jetbrains#sbt-structure;2.4.0
+[debug] 	typesafe-ivy-releases: revision in cache: org.jetbrains#sbt-structure;2.4.0
+[debug] 	found org.jetbrains#sbt-structure;2.4.0 in sbt-chain
+[debug] 	[2.4.0] org.jetbrains#sbt-structure;2.4.0
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.9.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.3 {provided=[default(compile)]}
+[debug] 	resolved ivy file produced in /home/swetha/IdeaProjects/kafkapublisher/target/resolution-cache/kafkapublisher/kafkapublisher$sbt_2.10/1.0/resolved.xml.xml
+[debug] :: downloading artifacts ::
+[debug] 	[NOT REQUIRED] org.scala-sbt#sbt;0.12.4!sbt.jar
+[debug] 	[NOT REQUIRED] org.jetbrains#sbt-structure;2.4.0!sbt-structure.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#main;0.12.4!main.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#compiler-interface;0.12.4!compiler-interface-bin.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#compiler-interface;0.12.4!compiler-interface-src.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_8_2;0.12.4!compiler-interface-bin.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_3;0.12.4!compiler-interface-bin.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_10_1;0.12.4!compiler-interface-bin.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#actions;0.12.4!actions.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#interface;0.12.4!interface.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#io;0.12.4!io.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#ivy;0.12.4!ivy.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#launcher-interface;0.12.4!launcher-interface.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#logging;0.12.4!logging.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#process;0.12.4!process.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#run;0.12.4!run.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#command;0.12.4!command.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#classpath;0.12.4!classpath.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#completion;0.12.4!completion.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#api;0.12.4!api.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#compiler-integration;0.12.4!compiler-integration.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#compiler-ivy-integration;0.12.4!compiler-ivy-integration.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#task-system;0.12.4!task-system.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#tasks;0.12.4!tasks.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#tracking;0.12.4!tracking.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#testing;0.12.4!testing.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#control;0.12.4!control.jar
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.3!scala-reflect.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#collections;0.12.4!collections.jar
+[debug] 	[NOT REQUIRED] jline#jline;1.0!jline.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#incremental-compiler;0.12.4!incremental-compiler.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#compile;0.12.4!compile.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#persist;0.12.4!persist.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#classfile;0.12.4!classfile.jar
+[debug] 	[NOT REQUIRED] org.scala-tools.sbinary#sbinary_2.9.0;0.4.0!sbinary_2.9.0.jar
+[debug] 	[NOT REQUIRED] org.apache.ivy#ivy;2.3.0-rc1!ivy.jar
+[debug] 	[NOT REQUIRED] com.jcraft#jsch;0.1.46!jsch.jar
+[debug] 	[NOT REQUIRED] commons-httpclient#commons-httpclient;3.1!commons-httpclient.jar
+[debug] 	[NOT REQUIRED] commons-logging#commons-logging;1.0.4!commons-logging.jar
+[debug] 	[NOT REQUIRED] commons-codec#commons-codec;1.2!commons-codec.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#cache;0.12.4!cache.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#test-agent;0.12.4!test-agent.jar
+[debug] 	[NOT REQUIRED] org.scala-tools.testing#test-interface;0.5!test-interface.jar
+[debug] :: resolution report :: resolve 6830ms :: artifacts dl 38ms
+[debug] 	report for kafkapublisher#kafkapublisher$sbt_2.10;1.0 default produced in /home/swetha/IdeaProjects/kafkapublisher/target/resolution-cache/reports/kafkapublisher-kafkapublisher$sbt_2.10-default.xml
+[debug] 	resolve done (6830ms resolve - 38ms download)
+[debug] Using inline dependencies specified in Scala.
+[debug] :: resolving dependencies :: kafkapublisher#kafkapublisher$sources_2.10;1.0
+[debug] 	confs: [default]
+[debug] 	validate = true
+[debug] 	refresh = false
+[debug] resolving dependencies for configuration 'default'
+[debug] == resolving dependencies for kafkapublisher#kafkapublisher$sources_2.10;1.0 [default]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#sbt;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#sbt;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#sbt;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#sbt;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#sbt;0.12.4
+[debug] 	found org.scala-sbt#sbt;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#main;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#main;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#main;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#main;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#main;0.12.4
+[debug] 	found org.scala-sbt#main;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#actions;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#actions;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#actions;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#actions;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#actions;0.12.4
+[debug] 	found org.scala-sbt#actions;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#classpath;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#classpath;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#classpath;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#classpath;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#classpath;0.12.4
+[debug] 	found org.scala-sbt#classpath;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#launcher-interface;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#launcher-interface;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#launcher-interface;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#launcher-interface;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#launcher-interface;0.12.4
+[debug] 	found org.scala-sbt#launcher-interface;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-lang#scala-library;2.10.3 [default->default(compile)]
+[info] Resolving org.scala-lang#scala-library;2.10.3 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.10.3 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.3
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-lang#scala-library;2.10.3
+[debug] 	found org.scala-lang#scala-library;2.10.3 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-lang#scala-library;2.10.3 [default->runtime]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-lang#scala-library;2.10.3 [default->compile]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-lang#scala-library;2.10.3 [default->master]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#interface;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#interface;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#interface;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#interface;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#interface;0.12.4
+[debug] 	found org.scala-sbt#interface;0.12.4 in sbt-chain
+[debug] 	[0.12.4] org.scala-sbt#interface;0.12.4
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#io;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#io;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#io;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#io;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#io;0.12.4
+[debug] 	found org.scala-sbt#io;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#control;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#control;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#control;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#control;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#control;0.12.4
+[debug] 	found org.scala-sbt#control;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-lang#scala-compiler;2.10.3 [default->default(compile)]
+[info] Resolving org.scala-lang#scala-compiler;2.10.3 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.10.3 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.10.3
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-lang#scala-compiler;2.10.3
+[debug] 	found org.scala-lang#scala-compiler;2.10.3 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-lang#scala-compiler;2.10.3 [default->runtime]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-lang#scala-compiler;2.10.3 [default->compile]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-lang#scala-compiler;2.10.3 [default->master]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-lang#scala-reflect;2.10.3 [default->default(compile)]
+[info] Resolving org.scala-lang#scala-reflect;2.10.3 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.10.3 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.10.3
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-lang#scala-reflect;2.10.3
+[debug] 	found org.scala-lang#scala-reflect;2.10.3 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-lang#scala-reflect;2.10.3 [default->runtime]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-lang#scala-reflect;2.10.3 [default->compile]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-lang#scala-reflect;2.10.3 [default->master]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#completion;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#completion;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#completion;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#completion;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#completion;0.12.4
+[debug] 	found org.scala-sbt#completion;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#collections;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#collections;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#collections;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#collections;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#collections;0.12.4
+[debug] 	found org.scala-sbt#collections;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->jline#jline;1.0 [default->default(compile)]
+[info] Resolving jline#jline;1.0 ...
+[debug] sbt-chain: Checking cache for: dependency: jline#jline;1.0 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: jline#jline;1.0
+[debug] 	typesafe-ivy-releases: revision in cache: jline#jline;1.0
+[debug] 	found jline#jline;1.0 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->jline#jline;1.0 [default->runtime]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->jline#jline;1.0 [default->compile]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->jline#jline;1.0 [default->master]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#api;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#api;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#api;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#api;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#api;0.12.4
+[debug] 	found org.scala-sbt#api;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#compiler-integration;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#compiler-integration;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#compiler-integration;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#compiler-integration;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#compiler-integration;0.12.4
+[debug] 	found org.scala-sbt#compiler-integration;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#incremental-compiler;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#incremental-compiler;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#incremental-compiler;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#incremental-compiler;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#incremental-compiler;0.12.4
+[debug] 	found org.scala-sbt#incremental-compiler;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#logging;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#logging;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#logging;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#logging;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#logging;0.12.4
+[debug] 	found org.scala-sbt#logging;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#process;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#process;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#process;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#process;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#process;0.12.4
+[debug] 	found org.scala-sbt#process;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#compile;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#compile;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#compile;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#compile;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#compile;0.12.4
+[debug] 	found org.scala-sbt#compile;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#persist;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#persist;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#persist;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#persist;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#persist;0.12.4
+[debug] 	found org.scala-sbt#persist;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-tools.sbinary#sbinary_2.9.0;0.4.0 [default->default(compile)]
+[info] Resolving org.scala-tools.sbinary#sbinary_2.9.0;0.4.0 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-tools.sbinary#sbinary_2.9.0;0.4.0 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-tools.sbinary#sbinary_2.9.0;0.4.0
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-tools.sbinary#sbinary_2.9.0;0.4.0
+[debug] 	found org.scala-tools.sbinary#sbinary_2.9.0;0.4.0 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-tools.sbinary#sbinary_2.9.0;0.4.0 [default->runtime]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-tools.sbinary#sbinary_2.9.0;0.4.0 [default->compile]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-tools.sbinary#sbinary_2.9.0;0.4.0 [default->master]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#classfile;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#classfile;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#classfile;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#classfile;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#classfile;0.12.4
+[debug] 	found org.scala-sbt#classfile;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#compiler-ivy-integration;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#compiler-ivy-integration;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#compiler-ivy-integration;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#compiler-ivy-integration;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#compiler-ivy-integration;0.12.4
+[debug] 	found org.scala-sbt#compiler-ivy-integration;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#ivy;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#ivy;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#ivy;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#ivy;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#ivy;0.12.4
+[debug] 	found org.scala-sbt#ivy;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.apache.ivy#ivy;2.3.0-rc1 [default->default(compile)]
+[info] Resolving org.apache.ivy#ivy;2.3.0-rc1 ...
+[debug] sbt-chain: Checking cache for: dependency: org.apache.ivy#ivy;2.3.0-rc1 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.apache.ivy#ivy;2.3.0-rc1
+[debug] 	typesafe-ivy-releases: revision in cache: org.apache.ivy#ivy;2.3.0-rc1
+[debug] 	found org.apache.ivy#ivy;2.3.0-rc1 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.apache.ivy#ivy;2.3.0-rc1 [default->runtime]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.apache.ivy#ivy;2.3.0-rc1 [default->compile]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.apache.ivy#ivy;2.3.0-rc1 [default->master]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->com.jcraft#jsch;0.1.46 [default->default(compile)]
+[info] Resolving com.jcraft#jsch;0.1.46 ...
+[debug] sbt-chain: Checking cache for: dependency: com.jcraft#jsch;0.1.46 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: com.jcraft#jsch;0.1.46
+[debug] 	typesafe-ivy-releases: revision in cache: com.jcraft#jsch;0.1.46
+[debug] 	found com.jcraft#jsch;0.1.46 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->com.jcraft#jsch;0.1.46 [default->runtime]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->com.jcraft#jsch;0.1.46 [default->compile]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->com.jcraft#jsch;0.1.46 [default->master]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->commons-httpclient#commons-httpclient;3.1 [default->default(compile)]
+[info] Resolving commons-httpclient#commons-httpclient;3.1 ...
+[debug] sbt-chain: Checking cache for: dependency: commons-httpclient#commons-httpclient;3.1 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: commons-httpclient#commons-httpclient;3.1
+[debug] 	typesafe-ivy-releases: revision in cache: commons-httpclient#commons-httpclient;3.1
+[debug] 	found commons-httpclient#commons-httpclient;3.1 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->commons-httpclient#commons-httpclient;3.1 [default->runtime]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->commons-httpclient#commons-httpclient;3.1 [default->compile]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->commons-httpclient#commons-httpclient;3.1 [default->master]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->commons-logging#commons-logging;1.0.4 [default->default(compile)]
+[info] Resolving commons-logging#commons-logging;1.0.4 ...
+[debug] sbt-chain: Checking cache for: dependency: commons-logging#commons-logging;1.0.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: commons-logging#commons-logging;1.0.4
+[debug] 	typesafe-ivy-releases: revision in cache: commons-logging#commons-logging;1.0.4
+[debug] 	found commons-logging#commons-logging;1.0.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->commons-logging#commons-logging;1.0.4 [default->runtime]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->commons-logging#commons-logging;1.0.4 [default->compile]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->commons-logging#commons-logging;1.0.4 [default->master]
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#run;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#run;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#run;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#run;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#run;0.12.4
+[debug] 	found org.scala-sbt#run;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#task-system;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#task-system;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#task-system;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#task-system;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#task-system;0.12.4
+[debug] 	found org.scala-sbt#task-system;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#tasks;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#tasks;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#tasks;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#tasks;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#tasks;0.12.4
+[debug] 	found org.scala-sbt#tasks;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#tracking;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#tracking;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#tracking;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#tracking;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#tracking;0.12.4
+[debug] 	found org.scala-sbt#tracking;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#cache;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#cache;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#cache;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#cache;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#cache;0.12.4
+[debug] 	found org.scala-sbt#cache;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#testing;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#testing;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#testing;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#testing;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#testing;0.12.4
+[debug] 	found org.scala-sbt#testing;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#test-agent;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#test-agent;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#test-agent;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#test-agent;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#test-agent;0.12.4
+[debug] 	found org.scala-sbt#test-agent;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#command;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#command;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#command;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#command;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#command;0.12.4
+[debug] 	found org.scala-sbt#command;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#precompiled-2_8_2;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#precompiled-2_8_2;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#precompiled-2_8_2;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#precompiled-2_8_2;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#precompiled-2_8_2;0.12.4
+[debug] 	found org.scala-sbt#precompiled-2_8_2;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#precompiled-2_9_3;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#precompiled-2_9_3;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#precompiled-2_9_3;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#precompiled-2_9_3;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#precompiled-2_9_3;0.12.4
+[debug] 	found org.scala-sbt#precompiled-2_9_3;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.scala-sbt#precompiled-2_10_1;0.12.4 [default->default(compile)]
+[info] Resolving org.scala-sbt#precompiled-2_10_1;0.12.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#precompiled-2_10_1;0.12.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#precompiled-2_10_1;0.12.4
+[debug] 	typesafe-ivy-releases: revision in cache: org.scala-sbt#precompiled-2_10_1;0.12.4
+[debug] 	found org.scala-sbt#precompiled-2_10_1;0.12.4 in sbt-chain
+[debug] == resolving dependencies kafkapublisher#kafkapublisher$sources_2.10;1.0->org.jetbrains#sbt-structure;2.4.0 [default->default(compile)]
+[info] Resolving org.jetbrains#sbt-structure;2.4.0 ...
+[debug] sbt-chain: Checking cache for: dependency: org.jetbrains#sbt-structure;2.4.0 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.jetbrains#sbt-structure;2.4.0
+[debug] 	typesafe-ivy-releases: revision in cache: org.jetbrains#sbt-structure;2.4.0
+[debug] 	found org.jetbrains#sbt-structure;2.4.0 in sbt-chain
+[debug] 	[2.4.0] org.jetbrains#sbt-structure;2.4.0
+[debug] 	resolved ivy file produced in /home/swetha/IdeaProjects/kafkapublisher/target/resolution-cache/kafkapublisher/kafkapublisher$sources_2.10/1.0/resolved.xml.xml
+[debug] :: downloading artifacts ::
+[debug] 	[NOT REQUIRED] org.scala-sbt#sbt;0.12.4!sbt.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#main;0.12.4!main.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#actions;0.12.4!actions.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#classpath;0.12.4!classpath.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#launcher-interface;0.12.4!launcher-interface.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.10.3!scala-library.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#interface;0.12.4!interface.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#io;0.12.4!io.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#control;0.12.4!control.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.3!scala-compiler.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.3!scala-reflect.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#completion;0.12.4!completion.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#collections;0.12.4!collections.jar(src)
+[debug] 	[NOT REQUIRED] jline#jline;1.0!jline.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#api;0.12.4!api.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#compiler-integration;0.12.4!compiler-integration.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#incremental-compiler;0.12.4!incremental-compiler.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#logging;0.12.4!logging.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#process;0.12.4!process.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#compile;0.12.4!compile.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#persist;0.12.4!persist.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-tools.sbinary#sbinary_2.9.0;0.4.0!sbinary_2.9.0.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#classfile;0.12.4!classfile.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#compiler-ivy-integration;0.12.4!compiler-ivy-integration.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#ivy;0.12.4!ivy.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.ivy#ivy;2.3.0-rc1!ivy.jar(src)
+[debug] 	[NOT REQUIRED] com.jcraft#jsch;0.1.46!jsch.jar(src)
+[debug] 	[NOT REQUIRED] commons-httpclient#commons-httpclient;3.1!commons-httpclient.jar(src)
+[debug] 	[NOT REQUIRED] commons-logging#commons-logging;1.0.4!commons-logging.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#run;0.12.4!run.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#task-system;0.12.4!task-system.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#tasks;0.12.4!tasks.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#tracking;0.12.4!tracking.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#cache;0.12.4!cache.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#testing;0.12.4!testing.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#test-agent;0.12.4!test-agent.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#command;0.12.4!command.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_8_2;0.12.4!precompiled-2_8_2.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_3;0.12.4!precompiled-2_9_3.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_10_1;0.12.4!precompiled-2_10_1.jar(src)
+[debug] 	[NOT REQUIRED] org.jetbrains#sbt-structure;2.4.0!sbt-structure.jar(src)
+[debug] :: resolution report :: resolve 236ms :: artifacts dl 242ms
+[debug] 	report for kafkapublisher#kafkapublisher$sources_2.10;1.0 default produced in /home/swetha/IdeaProjects/kafkapublisher/target/resolution-cache/reports/kafkapublisher-kafkapublisher$sources_2.10-default.xml
+[debug] 	resolve done (236ms resolve - 242ms download)
