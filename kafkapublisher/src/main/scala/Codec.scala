@@ -1,28 +1,19 @@
-import kafka.serializer.Encoder
+import kafka.serializer.{Decoder, Encoder}
 import kafka.utils.VerifiableProperties
-import org.jnetpcap.PcapHeader
-import org.jnetpcap.packet.{JPacket, PcapPacket}
-import org.jnetpcap.nio.JMemory.Type
-/**
- * Created by root on 30/10/14.
- */
+import org.jnetpcap.packet.PcapPacket
 
-trait test extends JPacket {
+
+class PcapEncoder(props: VerifiableProperties) extends Encoder[PcapPacket] {
+   def toBytes(packet:PcapPacket):Array[Byte] = {
+    packet.getByteArray(0,packet.size())
+   }
+}
+
+class PcapDecoder(props: VerifiableProperties) extends Decoder[PcapPacket] {
+    def fromBytes(bytes:Array[Byte]) : PcapPacket = {
+      val packet = new PcapPacket(bytes)
+      packet
+    }
 }
 
 
-class Codec {
-  /*class PcapDecoder(props: VerifiableProperties) extends Decoder[PcapPacket] with JPacket {
-
- }*/
-  class PcapEncoder(props: VerifiableProperties) extends Encoder[PcapPacket] with test{
-
-      def transferStateandDataTo(packet:Array[Byte]) : Int= {
-      val header = new PcapHeader(Type.POINTER)
-      var o = header.transferTo(packet, 0)
-      o += state.transferTo(packet, o)
-      o += super.transferTo(packet, 0, size, o)
-      o
-      }
-  }
-}
