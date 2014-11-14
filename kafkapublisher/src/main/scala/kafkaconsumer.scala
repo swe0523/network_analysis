@@ -1,6 +1,9 @@
+import kafka.serializer.StringDecoder
 import org.apache.spark.SparkConf
+import org.apache.spark.storage.StorageLevel
 import org.apache.spark.streaming.kafka.KafkaUtils
 import org.apache.spark.streaming.{Seconds, StreamingContext}
+import org.jnetpcap.packet.PcapPacket
 
 
 /**
@@ -17,14 +20,14 @@ object kafkaconsumer{
     //test-consumer-group
 
     val Array(zkQuorum, group, topics, numThreads) = args
-    //val kafkaParams = Map[String, String]("zookeeper.connect" -> zkQuorum, "group.id" -> group)
-    val sparkConf = new SparkConf().setMaster("local[3]").setAppName("kafkaconsumer")
+    val kafkaParams = Map[String, String]("zookeeper.connect" -> zkQuorum, "group.id" -> group)
+    val sparkConf = new SparkConf().setMaster("local").setAppName("kafkaconsumer")
     val ssc = new StreamingContext(sparkConf, Seconds(2))
     ssc.checkpoint("checkpoint")
     val topicpMap = topics.split(",").map((_,numThreads.toInt)).toMap
-     // val lines = KafkaUtils.createStream[String, PcapPacket, StringDecoder, StringDecoder](ssc, kafkaParams, Map(topics -> 1), StorageLevel.MEMORY_ONLY)
-    val lines = KafkaUtils.createStream(ssc, zkQuorum, group, topicpMap) //[String,String,StringDecoder,StringDecoder].toString()
-
+    val lines = KafkaUtils.createStream[String, PcapPacket, StringDecoder, PcapDecoder](ssc, kafkaParams, Map(topics -> 1), StorageLevel.MEMORY_ONLY)
+   // val lines = KafkaUtils.createStream(ssc, zkQuorum, group, topicpMap) //[String,String,StringDecoder,StringDecoder].toString()
+    lines.foreachRDD(rdd=>rdd.map(x=>println(x._2)))
     lines.print()
 
    /* val words = lines.map(_._2)
