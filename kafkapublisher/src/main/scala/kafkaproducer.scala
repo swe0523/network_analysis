@@ -24,31 +24,35 @@ object kafkaproducer extends Serializable{
     props.put("serializer.class", "PcapEncoder")
     val config = new ProducerConfig(props)
     val producer = new Producer[String,PcapPacket](config)
-    val file = "/home/Desktop/test.pcapng"
+    val file = "/home/swetha/Desktop/inside.pcap"
     // Send some messages
     val snaplen = 64 * 1024 // Capture all packets, no truncation
     val flags = Pcap.MODE_PROMISCUOUS // capture all packets
     val timeout = 10 * 1000
     val jsb = new java.lang.StringBuilder()
     val errbuf = new StringBuilder(jsb);
-    //val pcap = Pcap.openLive("eth0", snaplen, flags, timeout, errbuf)
-    val pcap = Pcap.openOffline(file,errbuf)
-    if (pcap == null) {
+   val pcap = Pcap.openOffline(file,errbuf)
+   // val pcap = Pcap.openLive("eth0", snaplen, flags, timeout, errbuf)
+
+   if (pcap == null) {
       println("Error : " + errbuf.toString())
     }
-
-    while(true){
-
-      val jpacketHandler = new PcapPacketHandler[String]() {
-
-        def nextPacket(packet: PcapPacket, user: String) {
-         val data = new KeyedMessage[String,PcapPacket](topic.toString,(packet))
+   while(true){
+    val jpacketHandler = new PcapPacketHandler[String]() {
+      def nextPacket(packet: PcapPacket, user: String) {
+          val data = new KeyedMessage[String,PcapPacket](topic.toString,(packet))
           producer.send(data)
-        
+                /*   try {
+            producer.send(data)
+          }
+          catch{
+            case e: Exception => println("exception caught: " + e);
+          }*/
 
         }
       }
-      pcap.loop(50, jpacketHandler, "jNetPcap works!")
+   pcap.loop(Pcap.LOOP_INFINITE, jpacketHandler, "jNetPcap works!")
+     //pcap.loop(20,jpacketHandler, "jNetPcap works!")
 
 
     }
