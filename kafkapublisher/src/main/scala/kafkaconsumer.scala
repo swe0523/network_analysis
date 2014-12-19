@@ -12,6 +12,8 @@ import org.jnetpcap.packet.PcapPacket
 import org.jnetpcap.packet.format.FormatUtils
 import org.jnetpcap.protocol.network.{Arp, Icmp, Ip4}
 import org.jnetpcap.protocol.tcpip.{Tcp, Udp}
+import org.apache.spark.streaming.StreamingContext._
+import org.apache.spark.SparkContext.rddToPairRDDFunctions
 /**
  * Created by root on 11/9/14.
  */
@@ -23,108 +25,99 @@ object kafkaconsumer extends Serializable{
     }
     //zookeeper.connect=127.0.0.1:2181
     //test-consumer-group
-    val ip = new Ip4()
-    val tcp = new Tcp()
-    val udp = new Udp()
-    val icmp = new Icmp()
-    val arp = new Arp()
+
     val Array(zkQuorum, group, topics, numThreads) = args
     val kafkaParams = Map[String, String]("zookeeper.connect" -> zkQuorum, "group.id" -> group)
     val sparkConf = new SparkConf().setMaster("local").setAppName("kafkaconsumer")
     sparkConf.set("spark.serializer", "org.apache.spark.serializer.JavaSerializer")
     val ssc = new StreamingContext(sparkConf, Seconds(2))
-   // ssc.checkpoint("checkpoint")
+    ssc.checkpoint("checkpoint")
     val outfile = new File("/home/swetha/Desktop/Resultlive11.txt" )
     //if (outfile.exists()) outfile.delete()
     val topicpMap = topics.split(",").map((_,numThreads.toInt)).toMap
 
     val lines = KafkaUtils.createStream[String, PcapPacket, StringDecoder, PcapDecoder](ssc, kafkaParams, Map(topics -> 1), StorageLevel.MEMORY_ONLY)
-    // val lines = KafkaUtils.createStream(ssc, zkQuorum, group, topicpMap) //[String,String,StringDecoder,StringDecoder].toString()
-    // val x = lines.foreachRDD(rdd => rdd.map(x=>x._2).foreach(x=>{val y = x.getTotalSize ; println("Size"+y)}))
-    /*val TotalSize = lines.map(_._2).map{stream => stream.getTotalSize }
-    TotalSize.print()
-    */
+   val m= lines.window(Seconds(4), Seconds(4)).mapPartitions(x=>x.map{y=>
+   val packet=y._2
+      val s=analysis(packet)
+      s
+   }).filter(x=>x!=())
 
-   var protocol : String ="null"
-    var sourceip : String = "null"
-    var destinationip : String = "null"
+     .reduceByKeyAndWindow((a, b) => {
+      (a :: b)
+    }, (a, b) => {
+     (a::b)
+    }, Seconds(4), Seconds(4))
+  .print()
 
-    var count = 0
-    var count1 = 0
-    val header = lines.map(_._2).map {
-      packet => if (packet.hasHeader(tcp)) { if (packet.hasHeader(ip)) {
-        protocol = "TCP"
-        val ReceivedTime = new Date(packet.getCaptureHeader.timestampInMillis());
-         sourceip = FormatUtils.ip(ip.source())
-         destinationip = FormatUtils.ip(ip.destination())
-        if(tcp.source == 23)
-          protocol = "TELNET"
-        else if(tcp.source == 80)
-          protocol == "HTTP"
-        else if(tcp.source == 443)
-          protocol == "HTTPS"
-     println(protocol + "\t" + ReceivedTime + "\t" + sourceip + "\t" + destinationip + "\t" + tcp.source() + "\t" + tcp.destination())
-   // Files.append(counts + "\n", outputFile, Charset.defaultCharset())
-      Files.append("\n"+protocol+"\t"+packet.getTotalSize+"\t"+ReceivedTime+"\t"+sourceip+"\t"+destinationip+"\t"+tcp.source()+"\t"+tcp.destination(),outfile,Charset.defaultCharset())
-      }
-    }
-       if (packet.hasHeader(udp)) { if (packet.hasHeader(ip)) {
-         protocol = "UDP"
-         val ReceivedTime = new Date(packet.getCaptureHeader.timestampInMillis());
-         sourceip = FormatUtils.ip(ip.source())
-         destinationip = FormatUtils.ip(ip.destination())
-        if(udp.source == 53)
-          protocol = "DNS"
-      println(protocol + "\t" + ReceivedTime + "\t" + sourceip + "\t" + destinationip + "\t" + udp.source() + "\t" + udp.destination())
-         Files.append("\n"+protocol+"\t"+packet.getTotalSize+"\t"+ReceivedTime+"\t"+sourceip+"\t"+destinationip+"\t"+udp.source()+"\t"+udp.destination(),outfile,Charset.defaultCharset())
-     }
-    }
-      if (packet.hasHeader(icmp)) { if(packet.hasHeader(ip)) {
-     protocol = "ICMP"
-      val ReceivedTime = new Date(packet.getCaptureHeader.timestampInMillis())
-       sourceip = FormatUtils.ip(ip.source())
-      destinationip = FormatUtils.ip(ip.destination())
-      println(protocol + "\t" + ReceivedTime + "\t" + sourceip + "\t" + destinationip)
-
-    Files.append("\n"+protocol+"\t"+packet.getTotalSize+"\t"+ReceivedTime+"\t"+sourceip+"\t"+destinationip,outfile,Charset.defaultCharset())
-      }}
-       if (packet.hasHeader(arp)) {
-        val protocol = "ARP"
-        val ReceivedTime = new Date(packet.getCaptureHeader.timestampInMillis())
-        val sourceip = FormatUtils.ip(ip.source())
-        val destinationip = FormatUtils.ip(ip.destination())
-        println(protocol + "\t" + ReceivedTime + "\t" + sourceip + "\t" + destinationip)
-        Files.append("\n"+protocol+"\t"+packet.getTotalSize+"\t"+ReceivedTime+"\t"+sourceip+"\t"+destinationip+"\t"+arp.protocolTypeDescription()+"\t"+arp.hardwareTypeDescription(),outfile,Charset.defaultCharset())
-      }
-
-
-
-      else {
-        lines.print()
-      }
-        if(protocol == "TCP"){
-          if(sourceip == destinationip){
-            count += 1
-            if(count>20){
-              println("LAND ATTACK")
-              Files.append("LAND ATTACK--------------------------"+sourceip,outfile,Charset.defaultCharset())
-            }
-          }  }
-        if(protocol == "TCP"){
-          if(destinationip == "10.30.59.255" && sourceip == "10.30.56.201"){
-            count1 += 1
-            if(count1>20){
-              print("SMURF ATTACK-------------------------")
-            }
-          }
-        }
-
-    }
-   header.print()
-   // header.saveAsTextFiles("/home/swetha/Desktop/Result1.txt")
-    /* val header = words.map{stream => stream.getCaptureHeader.wirelen()}
-    header.print()*/
     ssc.start()
     ssc.awaitTermination()
+  }
+  def analysis(packet:PcapPacket) = {
+    val ip = new Ip4()
+    val tcp = new Tcp()
+    val udp = new Udp()
+    val icmp = new Icmp()
+    val arp = new Arp()
+    var protocol: String = "null"
+    var sourceip: String = "null"
+    var destinationip: String = "null"
+    var sport: Int = 0
+    var dport: Int = 0
+try {
+  if (packet.hasHeader(tcp)) {
+    if (packet.hasHeader(ip)) {
+      protocol = "TCP"
+      val ReceivedTime = new Date(packet.getCaptureHeader.timestampInMillis())
+      sourceip = FormatUtils.ip(ip.source())
+      destinationip = FormatUtils.ip(ip.destination())
+      sport = tcp.source()
+      dport = tcp.destination()
+      if (sport == 23)
+        protocol = "TELNET"
+      else if (sport == 80)
+        protocol = "HTTP"
+      else if (sport == 443)
+        protocol = "HTTPS"
+    } else ""
+  } else
+  if (packet.hasHeader(udp)) {
+    if (packet.hasHeader(ip)) {
+      protocol = "UDP"
+      val ReceivedTime = new Date(packet.getCaptureHeader.timestampInMillis());
+      sourceip = FormatUtils.ip(ip.source())
+      destinationip = FormatUtils.ip(ip.destination())
+      sport = udp.source()
+      dport = udp.destination()
+      if (sport == 53)
+        protocol = "DNS"
+    } else ""
+  } else
+  if (packet.hasHeader(icmp)) {
+    if (packet.hasHeader(ip)) {
+      protocol = "ICMP"
+      val ReceivedTime = new Date(packet.getCaptureHeader.timestampInMillis())
+      sourceip = FormatUtils.ip(ip.source())
+      destinationip = FormatUtils.ip(ip.destination())
+      sport = 0
+      dport = 0
+
+    } else ""
+  } else
+  if (packet.hasHeader(arp)) {
+    protocol = "ARP"
+    val ReceivedTime = new Date(packet.getCaptureHeader.timestampInMillis())
+    if (packet.hasHeader(ip)) {
+      sourceip = FormatUtils.ip(ip.source())
+      destinationip = FormatUtils.ip(ip.destination())
+      sport = 0
+      dport = 0
+    }
+  }
+  else "no"
+}catch{
+  case e:Exception=>println(e.getMessage)
+}
+    (protocol,List(sourceip,destinationip,sport,dport))
   }
 }
